@@ -10,5 +10,5 @@ Install Manjaro on Android
 
 # Credits
 ItsMeKuroro<br>
-https://forum.manjaro.org/t/how-do-i-check-the-manjaro-arm-version-running-in-chroot-environment-aarch64/151446
+[https://forum.manjaro.org](https://forum.manjaro.org/t/how-do-i-check-the-manjaro-arm-version-running-in-chroot-environment-aarch64/151446)
 
