@@ -156,6 +156,33 @@ vncserver
 ```
 Then open VNC viewer android app to access it.
 
+6. Add script to ```.bashrc``` to run script at startup. 
+<br/>Inside Manjaro terminal
+
+```
+cd ~
+```
+
+```
+nano startup.sh
+```
+Add this to ```startup.sh```, any other command can be added
+```
+vncserver -kill :1
+vncserver
+clear
+```
+```CTRL + o``` and ```CTRL + x ``` to save and exit.
+
+Add this to ```.bashrc```
+
+```
+nano .bashrc 
+```
+Add ``` ./startup.sh ``` the end of ```.bashrc``` file
+
+Again, ```CTRL + o``` and ```CTRL + x``` to write and exit.
+
 # Faq?
 ### Black screen on VNC viewer?
 There are many solutions for that. But in some cases reinstalling desktop environment may solve the problems.<br/>
