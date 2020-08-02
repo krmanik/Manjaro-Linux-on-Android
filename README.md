@@ -19,7 +19,7 @@ pkg install wget && wget https://raw.githubusercontent.com/infinyte7/Manjaro-Lin
 
 ## Disclaimer
 
-The software and code samples available on this page are provided "as is" without warranty of any kind, either express or implied. <br/>**Use at your own risk.**
+The software, code and website links available in this GitHub repo are provided "as is" without warranty of any kind, either express or implied. <br/>**Use at your own risk.**
 
 # Steps to install Manjaro
 1. Install [termux](https://play.google.com/store/apps/details?id=com.termux) and [RealVNC](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android) from play store
