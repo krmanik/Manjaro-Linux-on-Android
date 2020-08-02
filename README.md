@@ -145,8 +145,9 @@ Or by selecting it in desktop environment
 1. Change ```Picture Quality``` to ```High``` in VNC viewer android app
 2. Change to lower resolution inside ```Manjaro Display Settings``` for small screen devices
 3. Uninstall unused programs from Manjaro to get more storage space
-4. Hacker Keyboard from Play store can be used
-5. ```vncserver``` may be re-run to view it in vncviewer
+4. Hacker Keyboard from Play store can be used<br/>
+
+**5. ```vncserver``` may be re-run to view it in vncviewer**<br/>
 Inside Manjaro console
 ```
 vncserver -kill :1
@@ -154,9 +155,9 @@ vncserver -kill :1
 ```
 vncserver
 ```
-Then open VNC viewer android app to access it.
+Then open VNC viewer android app to access it.<br/>
 
-6. Add script to ```.bashrc``` to run script at startup. 
+**6. Add script to ```.bashrc``` to run script at startup.** 
 <br/>Inside Manjaro terminal
 
 ```
