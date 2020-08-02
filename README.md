@@ -167,11 +167,9 @@ cd ~
 ```
 nano startup.sh
 ```
-Add this to ```startup.sh```, any other command can be added
+Add this to ```startup.sh```, To run anki at startup
 ```
-vncserver -kill :1
-vncserver
-clear
+anki
 ```
 ```CTRL + o``` and ```CTRL + x ``` to save and exit.
 
