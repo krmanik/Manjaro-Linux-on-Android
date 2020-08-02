@@ -76,21 +76,13 @@ pkg install wget && wget https://raw.githubusercontent.com/infinyte7/Manjaro-Lin
 
 <img src="Images/install_finish.png" height="528" width="265"></img>
 
-12. To run Manjaro 
-```
-./manjaro.sh
-```
-Select ```Chroot into existing rootfs```
-
-<img src="Images/select_existing.png" height="528" width="265"></img>
-
-13. Access it in VNC viewer android app. Run vncserver and ```Enter new password and confirm password``` at first run
+12. Access it in VNC viewer android app. Run vncserver and ```Enter new password and confirm password``` at first run, inside manjaro terminal
 ```
 vncserver
 ```
 <img src="Images/vncserver.png" height="528" width="265"></img>
 
-14. Open RealVNC app and enter following
+13. Open RealVNC app and enter following
 ```
 Address
 localhost:1
@@ -101,6 +93,26 @@ manjaro
 Enter password for the user to access it.
 
 <img src="Images/vnc_2.png" height="528" width="265"></img>
+
+# To run it after termux closed. 
+1. Open termux
+2. To run Manjaro 
+```
+./manjaro.sh
+```
+Select ```Chroot into existing rootfs```
+
+<img src="Images/select_existing.png" height="528" width="265"></img>
+
+3. May be ```vncserver``` not closed successfully, then re-run it.
+```
+vncserver -kill :1
+```
+Then
+```
+vncserver
+```
+4. Now open VNC viewer android app and type name and password and access it.
 
 # Install Manjaro Demo
 
