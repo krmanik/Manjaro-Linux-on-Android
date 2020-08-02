@@ -55,6 +55,7 @@ chroot() {
     -b /dev \
     -b /proc \
     -b "${directory}/root:/dev/shm" \
+    -b /sdcard \
     -w /root \
     /usr/bin/env -i \
     PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/games:/usr/games \
