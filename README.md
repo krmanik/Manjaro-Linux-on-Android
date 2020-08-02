@@ -182,6 +182,8 @@ Add ``` ./startup.sh ``` the end of ```.bashrc``` file
 
 Again, ```CTRL + o``` and ```CTRL + x``` to write and exit.
 
+*But opening terminal in Manjaro will again run that script.*
+
 # Faq?
 ### Black screen on VNC viewer?
 There are many solutions for that. But in some cases reinstalling desktop environment may solve the problems.<br/>
