@@ -241,6 +241,7 @@ install() {
       dialog --title "Manjaroid install" --msgbox "An error occurred (${status}). Please try again." -1 -1
       continue
     fi
+    echo nameserver 8.8.8.8 > "${directory}/etc/resolv.conf"
     setup "${directory}"
     chroot "${directory}"
   done
