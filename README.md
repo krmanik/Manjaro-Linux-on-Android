@@ -1,6 +1,11 @@
 # Manjaro Linux on Android
 Install Manjaro on Android using Termux
 
+
+## Note: Tigervnc 1.11.0 have issues running vncserver.
+It is recommended to downgrade Tigervnc to 1.10.1. [View this for more](https://github.com/infinyte7/Manjaro-Linux-on-Android/issues/5)
+
+
 ## Requirements
 - Android device running arm64 architecture and minimum version of 7.0 Nougat.
 - At least 5GB free storage space
