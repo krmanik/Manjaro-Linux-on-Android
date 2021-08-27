@@ -132,7 +132,8 @@ chmod -cf 1777 /tmp /var/spool/mail /var/tmp
 chmod -cf 2755 /var/log/journal
 
 ## Update and install the base and sudo packages
-pacman-mirrors -gf
+## pacman-mirrors -gf
+pacman-mirrors --country Germany,France,Austria
 pacman-key --init
 pacman-key --populate
 pacman -Syyuu --noconfirm base sudo manjaro-release
