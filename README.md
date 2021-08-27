@@ -18,6 +18,73 @@ Copy this and paste it in termux and follow steps to install
 ```
 pkg install wget && wget https://raw.githubusercontent.com/infinyte7/Manjaro-Linux-on-Android/master/manjaro.sh && chmod +x manjaro.sh && ./manjaro.sh
 ```
+
+
+## Install Manjaro cli only and install DE or WM manually
+
+1. Install wget and get `manjaro.sh` script
+    ```
+    pkg install wget
+    wget https://raw.githubusercontent.com/infinyte7/Manjaro-Linux-on-Android/master/manjaro.sh
+    chmod +x manjaro.sh
+    ./manjaro.sh
+    ```
+
+    Note: Do not install `tigervnc` and desktop environment like `xfce4`, instead install it manually. 
+    
+    So, select `None` from Manjaro setup menu `None`, `xfce4`, `LxQt`, `Mate`, `i3`
+
+2. Install DE or WM
+
+    a) If want to use xfce4 then install it
+    ```
+    pacman -Sy xfce4
+    ```
+    b) If want to use openbox then install it
+    ```
+    pacman -Sy openbox
+    ```
+
+3. Install tigervnc
+    ```
+    wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Pacman/tigervnc-fix.sh
+    chmod +x tigervnc-fix.sh
+    ./tigervnc-fix.sh
+    ```
+
+    <details>
+    <summary>View tigervnc-fix.sh</summary>
+
+    ```
+    pacman -S tar wget sed --noconfirm
+    pacman -U https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/tigervnc-1.10.1-1-aarch64.pkg.tar.xz --noconfirm
+    curl -s https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/lib.tar.xz -o /usr/lib/a.tar.xz && tar xf /usr/lib/a.tar.xz -C /usr/lib
+    sed -i '27i IgnorePkg = tigervnc' /etc/pacman.conf
+    ```
+
+    </details>
+
+4. Now run DE or WM
+
+    a) DE
+    ```
+    vncserver
+    export DISPLAY=:1
+    startxfce4 &
+    ```
+
+    b) WM
+    ```
+    vncserver
+    export DISPLAY=:1
+    openbox &
+    ```
+
+    A laucher script can be created for running vncserver, export and xfce4 or openbox
+
+5. Now customize as per requirements
+
+
 ## Demo
 
 <img src="Images/manjaro_anki_demo.gif" height="335" width="600"></img>
