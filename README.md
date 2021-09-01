@@ -1,6 +1,11 @@
 # Manjaro Linux on Android
 Install Manjaro on Android using Termux
 
+## Get preinstalled xfce4 and vncserver Manjaro rootfs
+Just download and proot into rootfs using Termux
+
+View [manjaro-rootfs-arm64](https://github.com/infinyte7/manjaro-fs-arm64)
+
 
 ## Note: Tigervnc 1.11.0 have issues running vncserver.
 It is recommended to downgrade Tigervnc to 1.10.1. [View this for more](https://github.com/infinyte7/Manjaro-Linux-on-Android/issues/5)
