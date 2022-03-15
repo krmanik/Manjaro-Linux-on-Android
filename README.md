@@ -4,11 +4,11 @@ Install Manjaro on Android using Termux
 ## Get preinstalled xfce4 and vncserver Manjaro rootfs
 Just download and proot into rootfs using Termux
 
-View [manjaro-rootfs-arm64](https://github.com/infinyte7/manjaro-fs-arm64)
+View [manjaro-rootfs-arm64](https://github.com/krmanik/manjaro-fs-arm64)
 
 
 ## Note: Tigervnc 1.11.0 have issues running vncserver.
-It is recommended to downgrade Tigervnc to 1.10.1. [View this for more](https://github.com/infinyte7/Manjaro-Linux-on-Android/issues/5)
+It is recommended to downgrade Tigervnc to 1.10.1. [View this for more](https://github.com/krmanik/Manjaro-Linux-on-Android/issues/5)
 
 
 ## Requirements
@@ -21,7 +21,7 @@ It is recommended to downgrade Tigervnc to 1.10.1. [View this for more](https://
 Copy this and paste it in termux and follow steps to install
 
 ```
-pkg install wget && wget https://raw.githubusercontent.com/infinyte7/Manjaro-Linux-on-Android/master/manjaro.sh && chmod +x manjaro.sh && ./manjaro.sh
+pkg install wget && wget https://raw.githubusercontent.com/krmanik/Manjaro-Linux-on-Android/master/manjaro.sh && chmod +x manjaro.sh && ./manjaro.sh
 ```
 
 
@@ -30,7 +30,7 @@ pkg install wget && wget https://raw.githubusercontent.com/infinyte7/Manjaro-Lin
 1. Install wget and get `manjaro.sh` script
     ```
     pkg install wget
-    wget https://raw.githubusercontent.com/infinyte7/Manjaro-Linux-on-Android/master/manjaro.sh
+    wget https://raw.githubusercontent.com/krmanik/Manjaro-Linux-on-Android/master/manjaro.sh
     chmod +x manjaro.sh
     ./manjaro.sh
     ```
@@ -107,7 +107,7 @@ The software, code and website links available in this GitHub repo are provided 
 
 2. To install Manjaro, copy following and paste it in termux
 ```
-pkg install wget && wget https://raw.githubusercontent.com/infinyte7/Manjaro-Linux-on-Android/master/manjaro.sh && chmod +x manjaro.sh && ./manjaro.sh
+pkg install wget && wget https://raw.githubusercontent.com/krmanik/Manjaro-Linux-on-Android/master/manjaro.sh && chmod +x manjaro.sh && ./manjaro.sh
 ```
 <img src="Images/wget_manjaro.png" height="528" width="265"></img>
 
