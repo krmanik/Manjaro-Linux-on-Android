@@ -55,6 +55,7 @@ chroot() {
     -b /dev \
     -b /proc \
     -b "${directory}/root:/dev/shm" \
+    -b $PREFIX/tmp:/tmp \
     -b /sdcard \
     -w /root \
     /usr/bin/env -i \
