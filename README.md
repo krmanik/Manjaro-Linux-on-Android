@@ -21,7 +21,7 @@ It is recommended to downgrade Tigervnc to 1.10.1. [View this for more](https://
 Copy this and paste it in termux and follow steps to install
 
 ```
-pkg install wget && wget https://raw.githubusercontent.com/krmanik/Manjaro-Linux-on-Android/master/manjaro.sh && chmod +x manjaro.sh && ./manjaro.sh
+pkg install -y wget proot pv pulseaudio && wget https://raw.githubusercontent.com/krmanik/Manjaro-Linux-on-Android/master/manjaro.sh && chmod +x manjaro.sh && ./manjaro.sh
 ```
 
 
@@ -29,7 +29,7 @@ pkg install wget && wget https://raw.githubusercontent.com/krmanik/Manjaro-Linux
 
 1. Install wget and get `manjaro.sh` script
     ```
-    pkg install wget
+    pkg install -y wget proot pv pulseaudio
     wget https://raw.githubusercontent.com/krmanik/Manjaro-Linux-on-Android/master/manjaro.sh
     chmod +x manjaro.sh
     ./manjaro.sh
